@@ -2,12 +2,18 @@ class Word
   def initialize(word)
     @word = word
   end
-  def scrabble()
-    one_point = %w(a e i o u l n s t)
+  def scrabble
+    score_system = {
+      "one" => %w(a e i o u l n s t),
+      "two" => %w(d g)
+    }
     score = 0
     @word.each_char() do |letter|
-      one_point.include?(letter)
-      score = score + 1
+      if score_system.fetch("one").include?(letter)
+        score = score + 1
+      else score_system.fetch("two").include?(letter)
+        score = score + 2
+      end
     end
     binding.pry
     return score
