@@ -4,11 +4,13 @@ class Word
   end
   def scrabble
     score_system = {
-      "one" => %w(a e i o u l n s t),
+      "one" => %w(a e i o u l n r s t),
       "two" => %w(d g),
       "three" => %w(b c m p),
       "four" => %w(f h v w y),
-      "five" => %w(k)
+      "five" => %w(k),
+      "eight" => %w(j x),
+      "ten" => %w(q z)
     }
     score = 0
     @word.each_char() do |letter|
@@ -20,11 +22,15 @@ class Word
         score = score + 3
       elsif score_system.fetch("four").include?(letter)
         score = score + 4
-      else score_system.fetch("five").include?(letter)
+      elsif score_system.fetch("five").include?(letter)
         score = score + 5
+      elsif score_system.fetch("eight").include?(letter)
+        score = score + 8
+      else score_system.fetch("ten").include?(letter)
+        score = score + 10
       end
     end
-    # binding.pry
+    binding.pry
     return score
   end
 end
