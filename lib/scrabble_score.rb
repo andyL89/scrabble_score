@@ -2,10 +2,15 @@ class Word
   def initialize(word)
     @word = word
   end
-
-  def scrabble
-    @word.include?("a")
-    return 1
+  def scrabble()
+    one_point = %w(a e i o u l n s t)
+    score = 0
+    @word.each_char() do |letter|
+      one_point.include?(letter)
+      score = score + 1
+    end
+    binding.pry
+    return score
   end
 end
 
