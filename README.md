@@ -1,6 +1,6 @@
 # Scrabble Score Tdd
 #### *Co-Created By: Andrew Lawson*
-#### *Co-Created By: *
+#### *Co-Created By: Jon Stump*
 #### *Scrabble Score With TDD*
 
 * * *
@@ -20,7 +20,7 @@ This is an application for learning TDD with ruby while attending Epicodus codin
 ### Want to see this webpage now?
 ###### See this web page in action on [Github Pages]({repo})
 
-* Go to ( https://github.com/andyL89/leetspeak ).
+* Go to ( https://github.com/andyL89/scrabble_score ).
 
 *  Navigate to the code button on the github website.
 
@@ -36,7 +36,7 @@ This is an application for learning TDD with ruby while attending Epicodus codin
 
 - Once you have chosen your desired directory use the command.
 ```bash
-git clone https://github.com/andyL89/leetspeak.git
+git clone https://github.com/andyL89/scrabble_score.git
 ```
 
 <div
@@ -83,7 +83,7 @@ code .
 * * *
 
 ## License:
-> *&copy; Andrew Lawson,   2021*
+> *&copy; Andrew Lawson, Jon Stump  2021*
 
 Licensed under [MIT license](https://mit-license.org/)
 
@@ -91,3 +91,4 @@ Licensed under [MIT license](https://mit-license.org/)
 
 ## Contact Information
 _Andy Lawson: [Email](alawson89@gmail.com)_
+_Jon Stump: [Email](jmstump@gmail.com)_
