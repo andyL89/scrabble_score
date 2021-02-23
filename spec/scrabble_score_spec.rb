@@ -13,6 +13,6 @@ describe('Word#scrabble') do
     expect(Word.new("bagged").scrabble()).to(eq(11))
   end
   it("returns a scrabble score for hash 1 & 2 & 3 & 4") do
-    expect(Word.new("").scrabble()).to(eq(11))
+    expect(Word.new("champagne").scrabble()).to(eq(19))
   end
 end

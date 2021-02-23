@@ -6,7 +6,7 @@ class Word
     score_system = {
       "one" => %w(a e i o u l n s t),
       "two" => %w(d g),
-      "three" => %w(b c m p)
+      "three" => %w(b c m p),
       "four" => %w(f h v w y)
     }
     score = 0
@@ -21,7 +21,7 @@ class Word
         score = score + 4
       end
     end
-    # binding.pry
+    binding.pry
     return score
   end
 end
