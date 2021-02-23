@@ -7,7 +7,8 @@ class Word
       "one" => %w(a e i o u l n s t),
       "two" => %w(d g),
       "three" => %w(b c m p),
-      "four" => %w(f h v w y)
+      "four" => %w(f h v w y),
+      "five" => %w(k)
     }
     score = 0
     @word.each_char() do |letter|
@@ -17,11 +18,13 @@ class Word
         score = score + 2
       elsif score_system.fetch("three").include?(letter)
         score = score + 3
-      else score_system.fetch("four").include?(letter)
+      elsif score_system.fetch("four").include?(letter)
         score = score + 4
+      else score_system.fetch("five").include?(letter)
+        score = score + 5
       end
     end
-    binding.pry
+    # binding.pry
     return score
   end
 end

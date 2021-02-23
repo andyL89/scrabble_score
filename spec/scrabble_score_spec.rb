@@ -15,4 +15,7 @@ describe('Word#scrabble') do
   it("returns a scrabble score for hash 1 & 2 & 3 & 4") do
     expect(Word.new("champagne").scrabble()).to(eq(19))
   end
+  it("returns a scrabble score for hash 1 & 2 & 3 & 4 & 5") do
+    expect(Word.new("makeup").scrabble()).to(eq(14))
+  end
 end
