@@ -30,30 +30,6 @@ class Word
         score = score + 10
       end
     end
-    # binding.pry
-    return score
+    score
   end
 end
-
-
-
-
-
-
-# word1 = Word.new("a")
-# puts word1.scrabble()
-
-#   def characters
-#     @characters
-#   end
-# end
-
-# def scrabble
-#   one_point = ["a"]
-#   score = 0
-#   one_point.each do |array_element|
-#     if one_point.include?("a")
-#       score = score + 1
-#     end
-#   end
-# end
